@@ -1989,6 +1989,7 @@ __metadata:
   resolution: "deck-feconf2022@workspace:."
   dependencies:
     "@slidev/cli": ^0.35.5
+    playwright-chromium: ^1.27.0
     slidev-theme-geist: ^0.8.1
   languageName: unknown
   linkType: soft
@@ -3601,6 +3602,26 @@ __metadata:
   version: 1.4.0
   resolution: "plantuml-encoder@npm:1.4.0"
   checksum: d0ad77d960a8b092d8cfe9bdefc7a482ec073ecc686a92e482a8cbe35183d42433e79efd61fe24859ebd3219859d7fe022d49aaeec8827d46fde2ae4e7dba461
+  languageName: node
+  linkType: hard
+
+"playwright-chromium@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "playwright-chromium@npm:1.27.0"
+  dependencies:
+    playwright-core: 1.27.0
+  bin:
+    playwright: cli.js
+  checksum: 1b2d3b7d23fc2713729348eafe90657ed845baf80bf783a42fe03e4e0f27693107becbb599a8db7f774cad90817d393f2a42fda53fcf8e194311ce813c32b59b
+  languageName: node
+  linkType: hard
+
+"playwright-core@npm:1.27.0":
+  version: 1.27.0
+  resolution: "playwright-core@npm:1.27.0"
+  bin:
+    playwright: cli.js
+  checksum: e45565af0c33c34ccf7b513d8e84eda5101f0e12d495e9e1c2bfe16b675ddcdd8f064c449a1bd908365f2f126c8d40cc14bf95976e881e2e1620cd239240ed23
   languageName: node
   linkType: hard
 

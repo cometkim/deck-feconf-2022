@@ -10,5 +10,8 @@
     "@slidev/cli": "^0.35.5",
     "slidev-theme-geist": "^0.8.1"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "playwright-chromium": "^1.27.0"
+  }
 }
