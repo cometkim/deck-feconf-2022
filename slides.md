@@ -16,7 +16,7 @@ fonts:
 
 # 엣지 컴퓨팅
 
-프론트엔드 포텐셜 _(다시)_ 끌어올리기
+웹 개발의 미래를 가르키는 새로운 키워드
 
 <!--
 
@@ -106,7 +106,7 @@ layout: center
 그럼 저희가 얘기하는 프론트엔드=클라이언트, 백엔드=서버 겠군요.
 
 사실, 최근 채용시장에선 일반적으로 "프론트엔드 엔지니어" 라고 하면 "웹 클라이언트 개발자" 를 지칭합니다.
-이렇게 이미 용어가 한 가지 의미로 정착한 상태에서 단어 하나하나 엄밀하게 따지기 피곤하다고 느끼실 수도 있겠습니다.
+이렇게 이미 용어가 한 가지 의미로 정착한 상태에서 단어 하나하나 엄밀하게 따지면 피곤하다고 느끼실 수도 있겠습니다.
 
 그럼에도 불구하고 한 번만 돌아봅시다.
 
@@ -230,9 +230,9 @@ class: 'text-center'
   </div>
 
   - 당근마켓 미니앱 팀에서 **웹 프론트엔드 개발자**로 일하고 있습니다.
-  - 클라이언트 개발도 하고요.
-  - 미니앱에 필요한 시스템 컴포넌트를 설계합니다.
-  - 종종 서버 코드를 짭니다.
+  - **클라이언트 개발**도 하고요.
+  - 미니앱에 필요한 **시스템 컴포넌트를 설계**합니다.
+  - 종종 **서버 코드**를 짭니다.
 </div>
 
 <style>
@@ -293,7 +293,7 @@ class: 'text-center'
 
 # 느낀점
 
-엣지 컴퓨팅은 프론트엔드 개발자가 가질 수 있는 가장 강력한 무기 중 하나
+엣지 컴퓨팅은 **프론트엔드 개발자가 가질 수 있는 가장 강력한 무기** 중 하나
 
 <style>
   p {
@@ -456,6 +456,8 @@ layout: center
 
 아까 네트워크를 사이에 두고 앞단에 클라이언트, 뒷단에 애플리케이션 서버가 있다고 단순하게 설명했습니다. 그럼 이 그림에서 사용자와 가까운 컴포넌트는 무엇이죠? 클라이언트 입니다.
 
+여기서는 정의에 따라 우리가 만드는 클라이언트가 곧 엣지라고 볼 수 있겠습니다.
+
 -->
 
 ---
@@ -481,11 +483,11 @@ class: 'text-center'
 
 현실 세계에선 상당히 복잡합니다.
 
-이 중엔 아까 언급했던 CDN 회사의 POP 서버도 있을테고요. 그럼 이 것도 우리 애플리케이션 서버보단 사용자에 가까우니 상대적으로 앞단이겠죠.
+이 중엔 아까 언급했던 CDN 회사의 POP 서버도 있을테고요. 그럼 이 것도 우리 애플리케이션 서버보단 사용자에 가까우니 엣지라고 볼 수 있겠네요.
 
-지나서 더 들어가보면 어떤 라우터 장비가 나올 겁니다. 이것도 애플리케이션 서버 보단 앞단 말할 수 있습니다.
+지나서 더 들어가보면 어떤 라우터 장비가 나올 겁니다. 이것도 애플리케이션 서버 보단 앞단이니 엣지라고 볼 수 있습니다.
 
-내부망으로 들어가다보니 리버스 프록시가 하나 있으면, 그것도 애플리케이션 서버보다 앞단입니다.
+내부망으로 들어가다보니 리버스 프록시가 하나 있으면, 그것도 애플리케이션 서버보다 앞단이니까 엣지입니다.
 
 -->
 
@@ -505,7 +507,7 @@ layout: center
 
 어떤 사람들은 네트워크의 앞단, 즉 사용자와 가까운 가장자리 부분을 모두 엣지라고 부르기 시작했습니다.
 
-조금 이해가 되시나요?
+앞단 즉, 프론트엔드가 엣지입니다. 조금 이해가 되시나요?
 
 -->
 
@@ -564,11 +566,21 @@ class: 'text-center'
 <!--
 
 웹은 상당히 복잡합니다. 계속 자라나는 애플리케이션의 복잡성과 웹의 복잡성을 함께 다루는 것은 어렵습니다.
+-->
 
+---
+layout: center
+class: 'text-center'
+---
+
+## 웹은 복잡하지만 자주 변하지 않는다
+
+그럼 계층을 나누면 되겠네!
+
+<!--
 다행히 애플리케이션과 다르게 웹은 잘 바뀌지 않습니다. 복잡성을 해소하기 위해 우리는 소프트웨어 공학의 기본 정리에 따라 계층을 나눌 수 있습니다.
 
 Apache httpd, NGINX, HAProxy 같은 웹 서버에 네트워크 관심사를 전부 위임해서 애플리케이션과 분리하는 겁니다.
-
 -->
 
 ---
@@ -605,6 +617,9 @@ class: text-center
 
 바로 빛의 속도입니다. 모든 정보 통신 기술은 빛의 속도를 뛰어넘을 수가 없습니다. (적어도 아직까지는요)
 
+그나마 다행인 점은 빛의 속도가 엄청나게 빠르다는 겁니다.
+...불행인점은 그게 충분치 않다는 거고요.
+
 -->
 
 ---
@@ -626,26 +641,34 @@ class: text-center
 
 <style>
   img {
+    @apply text-center;
     max-height: 40vh;
+  }
+</style>
+
+---
+layout: center
+---
+
+- 광케이블에선 더 느리다 (대략 68% 정도)
+- 경로가 너무 복잡하다
+- HTTP Round-trip 과정이 너무 비효율적이다
+- TLS Handshake까지 더하면...
+
+<style>
+  ul {
+    list-style: initial;
   }
 </style>
 
 <!--
 
-그나마 다행인 점은 빛의 속도가 엄청나게 빠르다는 겁니다.
+몇 가지 문제점들... 물론 HTTP/2, HTTP/3 등 프로토콜의 진화로 많은 부분들이 개선되고 있습니다.
 
-불행인점은 그게 충분치 않다는 거고요.
-
-몇 가지 문제점들...
-
-- 광케이블에선 느리다.
-- 경로가 너무 복잡하다.
-- HTTP Round-trip 라운드트립 과정이 너무 비효율적이다.
-- TLS Handshake까지 더하면...
-
-물론 HTTP/2, HTTP/3 등 프로토콜의 진화로 많은 부분들이 개선되고 있습니다.
+하지만 프로토콜로 개선할 수 없는 물리적인 제약은 여전히 우리를 괴롭힙니다.
 
 -->
+
 ---
 layout: center
 ---
@@ -661,7 +684,9 @@ class: 'text-center'
 
 <!--
 
-물류와 비슷한 이치입니다. 중앙 센터가 너무 멀어서 운송 시간이 증가한다면, 더 가까운 곳에 창고를 설치하고 물건을 미리 옮겨두면 되는 겁니다.
+물류와 비슷한 이치입니다.
+
+중앙 센터가 너무 멀어서 운송 시간이 증가한다면, 더 가까운 곳에 창고를 설치하고 물건을 미리 옮겨두면 되는 겁니다.
 
 -->
 
@@ -681,7 +706,7 @@ class: 'text-center'
 
 <!--
 
-이렇게 물류 창고에 해당하는 POP 서버를 전세계 100~200여개가 넘는 위치에 배치해서 구축한 것을 CDN 이라고 합니다.
+이렇게 물류 창고에 해당하는 PoP 서버를 전세계 100~200여개가 넘는 위치에 배치해서 구축한 것을 CDN 이라고 합니다.
 
 -->
 
@@ -694,6 +719,7 @@ class: text-center
 
 ---
 layout: center
+class: text-center
 ---
 
 # 흔한 웹 서버
@@ -713,8 +739,7 @@ layout: center
 
 단순 네트워킹의 경우, 효율적으로 처리하기 위해 설계된 L4 스위치 등 전용 컨트롤러로 충분히 다룰 수 있을 것 입니다.
 
-하지만 아까 HTTP 처리를 모두 웹 서버에 위임했던 것과 같이, 애플리케이션과 네트워크 사이의 모호한 공통 관심사들을 어디에 위임할지 고민하기 시작하면서
-소프트웨어 기반의 컨트롤러가 점점 확장되고 대중화되기 시작했습니다.
+하지만 아까 HTTP 처리를 모두 웹 서버에 위임했던 것과 같이, 애플리케이션과 네트워크 사이의 모호한 공통 관심사들을 어디에 위임할지 고민하기 시작하면서 소프트웨어 기반의 컨트롤러가 점점 확장되고 대중화되기 시작했습니다.
 
 NGINX 설정 직접 해보셨나요? 굉장히 많은 것들을 지원합니다.
 
@@ -728,7 +753,7 @@ layout: center
 
 <!--
 
-이것들을 어디까지 네트워크라고 부르고 어디까지 애플리케이션이라고 봐야하는 걸까요?
+이것들을 어디까지 네트워크의 관심사고 어디까지 애플리케이션의 관심사라 봐야하는 걸까요?
 
 -->
 
@@ -745,7 +770,7 @@ class: 'text-center'
 
 요즘은 저수준 네트워킹이나 전문 장비를 직접 다루시는 분들이 아니라면 이런 네트워크 프로토콜을 모두 소프트웨어로 다루고 계실겁니다.
 
-거칠게 요약하면, 네트워크 자체가 애플리케이션으로 추상화되었다고 볼 수 있을겁니다.
+거칠게 요약하면, 네트워크 요구사항 자체가 애플리케이션으로 추상화되었다고 볼 수 있을겁니다.
 
 -->
 
@@ -790,6 +815,22 @@ layout: center
 class: 'text-center'
 ---
 
+## 엣지에서 더 효율적으로 할 수 있는 것들
+
+- Handling HTTP-specific
+- Static assets serving
+- Caching
+- Access logging
+- Basic access control
+- Request limiting
+- Load balancing
+- ...
+
+---
+layout: center
+class: 'text-center'
+---
+
 # Road to Edge Computing
 
 두 마리 토끼를 한꺼번에 잡으려면?
@@ -806,7 +847,25 @@ layout: center
 class: 'text-center'
 ---
 
-# Limit 2. Global
+## 🤔
+
+컴퓨팅 레이어에서 동적으로 캐시 정책을 결정할 수 있어야 함
+
+---
+layout: center
+class: 'text-center'
+---
+
+# Limit 2. Global Scale
+
+---
+layout: center
+class: 'text-center'
+---
+
+## 🤔
+
+글로벌 규모 컴퓨팅 인프라 구축이 필요함
 
 ---
 layout: center
@@ -817,12 +876,35 @@ class: 'text-center'
 
 ---
 layout: center
+class: 'text-center'
+---
+
+## 🤔
+
+배포된 코드가 호스트를 손상시킬 수 없게 격리해야 함
+
+---
+layout: center
+class: 'text-center'
+---
+
+# FTSE+
+
+> We can solve any problem by introducing an extra level of indirection.\
+> …except for the problem of too many levels of indirection
+>
+> 모든 문제는 추가적인 간접(추상)화 도입으로 해결할 수 있습니다.\
+> ...너무 많은 간접화 계층 자체를 제외하면
+>
+> — [Fundamental Theorem of Software Engineering](https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering)
+
+---
+layout: center
 ---
 
 # 거인의 어깨 위에서
 
-프로그래밍 모델의 진화
-
+- Cloud Infrastructure
 - Structured Concurrency
 - Containers / Isolation
 - Web APIs
@@ -833,6 +915,27 @@ layout: center
     list-style: initial;
   }
 </style>
+
+---
+layout: center
+class: text-center
+---
+
+# + 클라우드 인프라
+
+<figure>
+
+  ![Top 10 Cloud Providers](/images/top10-cloud-providers.webp)
+
+  <figcaption>
+
+  (출처: [AllCode](https://allcode.com/cloud-providers/))
+
+  </figcaption>
+
+</figure>
+
+
 
 ---
 layout: center
@@ -860,9 +963,10 @@ layout: center
 
 # + 발전한 가상화 기술
 
-- Docker
-- Firecracker
-- Micro-VM
+- [Docker](https://www.docker.com/)
+- [Firecracker](https://firecracker-microvm.github.io/)
+- [V8 Isolate](https://v8.github.io/api/head/classv8_1_1Isolate.html)
+- ... 등 많은 Micro-VM 기술
 
 <style>
   ul {
@@ -886,10 +990,10 @@ layout: center
 
 # + 더 발전한 API 표준
 
-- Web security model
-- Service Worker
-- Fetch API
-- Cache API
+- [Web Security Model](https://developer.mozilla.org/en-US/docs/Web/Security)
+- [Service Worker](https://w3c.github.io/ServiceWorker/)
+- [Fetch API](https://fetch.spec.whatwg.org/)
+- [Cache API](https://web.dev/cache-api-quick-guide/)
 
 <style>
   ul {
@@ -956,6 +1060,22 @@ class: 'text-center'
 
 ---
 layout: center
+---
+
+**AWS**는 사용자에게 엣지 구성에 대해 **더 많은 자유도**를 부여함
+- 장점: 어떤 네트워크에서 어떤 일이 일어날지 더 명시적으로 제어 가능
+- 단점: 프로비저닝과 구성이 복잡하고 어려움
+
+<style>
+  ul {
+    @apply pl-4;
+
+    list-style: initial;
+  }
+</style>
+
+---
+layout: center
 class: 'text-center'
 ---
 
@@ -975,6 +1095,22 @@ class: 'text-center'
 
 ---
 layout: center
+---
+
+**Cloudflare**는 네트워크 **패턴을 분석해서 구성을 자동화**함
+- 장점: 사용자가 구성에 대해 전혀 신경쓰지 않음 (It just works)
+- 단점: 실제로 어떤 식으로 동작할지 파악이 어려움
+
+<style>
+  ul {
+    @apply pl-4;
+
+    list-style: initial;
+  }
+</style>
+
+---
+layout: center
 class: 'text-center'
 ---
 
@@ -986,13 +1122,51 @@ class: 'text-center'
 layout: center
 ---
 
-## 예시: BFF
+## 예시: Edge-side Rendering
+
+- [Remix on Edge](https://remix.run/blog/remix-and-the-edge)
+- [Next.js on Edge](https://github.com/vercel/next.js/discussions/34179)
+- [Vitedge](https://vitedge.js.org/)
+
+<style>
+  ul {
+    @apply ml-8;
+    list-style: initial;
+  }
+</style>
+
+---
+layout: center
+---
+
+## 예시: BFF (Backend For Frontend)
+
+- [OpenGraph API](https://github.com/cometkim/metagrab)
+- [주소검색 Proxy](https://github.com/daangn/juso-edge)
+- [GraphQL Mesh](https://the-guild.dev/graphql/mesh)
+- 세션 캐시 / API 게이트웨이
+
+<style>
+  ul {
+    @apply ml-8;
+    list-style: initial;
+  }
+</style>
 
 ---
 layout: center
 ---
 
 ## 예시: Advanced Cache
+
+- [Stellate](https://stellate.co/) (formally GraphCDN)
+
+<style>
+  ul {
+    @apply ml-8;
+    list-style: initial;
+  }
+</style>
 
 ---
 layout: center
@@ -1001,6 +1175,7 @@ layout: center
 ## 예시: Edge Middleware
 
 - [Early Hints Worker](https://github.com/KianNH/cloudflare-worker-early-hints)
+- Example: [Edge Localization](https://developers.cloudflare.com/workers/tutorials/localize-a-website/)
 
 <style>
   ul {
@@ -1015,8 +1190,8 @@ layout: center
 
 ## 예시: Others
 
-- [OpenGraph API on the Edge](https://metagrab.cometkim.workers.dev/opengraph/manifest?url=https://www.daangn.com)
 - [Image Resizing](https://developers.cloudflare.com/images/image-resizing/)
+- [OpenGraph Image Rendering](https://og-playground.vercel.app/)
 - Edge Storages
 - AI Models / Hardwares
 
@@ -1043,7 +1218,8 @@ layout: center
 # WinterCG
 
 - [Web-interoperable Runtimes Community Group](https://wintercg.org/)
-- [위치 투명성 (Location transperency)](https://en.wikipedia.org/wiki/Location_transparency)
+
+진정한 [위치 투명성 (Location transperency)](https://en.wikipedia.org/wiki/Location_transparency)의 구현이 될 지도
 
 <style>
   ul {
@@ -1058,6 +1234,7 @@ layout: center
 
 # Open Sources
 
+- [workerd](https://github.com/cloudflare/workerd), Cloudflare Workers runtime
 - [Edge Runtime](https://github.com/vercel/edge-runtime) by Vercel
 - [Roll your own JavaScript runtime](https://github.com/denoland/roll-your-own-javascript-runtime) by Deno
 
@@ -1088,11 +1265,32 @@ layout: center
 
 ---
 layout: center
+class: text-center
+---
+
+## 예전에 만든 것들은 어떡해요?
+
+웹의 가장 큰 장점: 이전 세대의 것들을 절대 그냥 버리지 않는다는 것
+
+<!--
+
+그럼 지금까지 만들어 온 것들은 어떻게 할까요?
+
+세상엔 엣지가 아니지만 여전히 위대한 소프트웨어가 많이 있습니다. 예를들면 워드프레스 같은 것들이요.
+이 것들은 엣지가 아니니까 이제 용도 폐기인 걸까요?
+
+그렇지 않습니다.
+
+-->
+
+---
+layout: center
+class: text-center
 ---
 
 # CGI? WASI!
 
-- WASI (WebAssembly System Interface)
+[WASI (WebAssembly System Interface)](https://wasi.dev/)
 
 <style>
   ul {
@@ -1100,6 +1298,57 @@ layout: center
     list-style: initial;
   }
 </style>
+
+---
+layout: center
+class: text-center
+---
+
+# Wordpress on Browser
+
+<figure>
+
+  ![](/images/wordpress-on-browser.gif)
+
+  <figcaption>
+
+  ([https://github.com/WordPress/wordpress-wasm])
+
+  </figcaption>
+</figure>
+
+<style>
+  figure {
+    max-height: 40vh;
+  }
+</style>
+
+---
+layout: center
+class: text-center
+---
+
+# Flash on Browser
+
+https://ruffle.rs/demo/
+
+---
+layout: center
+class: 'text-center'
+---
+
+## 미래는 생각보다 그리 놀랍지 않습니다
+
+<figure>
+
+  ![](/images/back-to-the-future-poster.jpg)
+
+  <figcaption>
+
+  익숙하고 편안한 집으로 돌아갈 뿐
+
+  </figcaption>
+</figure>
 
 ---
 layout: center
@@ -1120,18 +1369,22 @@ layout: center
 
 ---
 layout: center
+class: 'text-center'
 ---
 
 # 레퍼런스
 
-(TBD)
+- [Stanford Seminar - The Future of Edge Computing from an International Perspective](https://youtu.be/Hhobq4fs87w)
+- [What is edge computing?](https://youtu.be/QVXbp5-YUPY)
+- [Evolution of Edge @Netflix](https://youtu.be/k01PHa5YDpQ)
+- [Is "edge" computing really faster?](https://youtu.be/yOP5-3_WFus)
 
----
-layout: center
-class: 'text-center'
----
-
-![](/images/back-to-the-future-poster.jpg)
+<style>
+  ul {
+    @apply ml-8 text-left;
+    list-style: initial;
+  }
+</style>
 
 ---
 layout: center
