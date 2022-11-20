@@ -1,0 +1,11 @@
+[build.environment]
+  NODE_VERSION = "18"
+
+[build]
+  publish = "dist"
+  command = "yarn build"
+
+[[redirects]]
+  from = "/*"
+  to = "https://the-future-of-frontend-is-edge.pages.dev/index.html"
+  status = 301
