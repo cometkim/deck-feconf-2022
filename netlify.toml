@@ -1,0 +1,10 @@
+[build.environment]
+  NODE_VERSION = "18"
+
+[build]
+  publish = "dist"
+  command = "yarn build"
+
+[[edge_functions]]
+  function = "reidrect-to-pages"
+  path = "/*"
