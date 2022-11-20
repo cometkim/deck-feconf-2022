@@ -1223,6 +1223,7 @@ class: 'text-center'
 
 ---
 layout: center
+class: 'text-center'
 ---
 
 # WinterCG
@@ -1230,13 +1231,6 @@ layout: center
 - [Web-interoperable Runtimes Community Group](https://wintercg.org/)
 
 진정한 [위치 투명성 (Location transperency)](https://en.wikipedia.org/wiki/Location_transparency)의 구현이 될 지도
-
-<style>
-  ul {
-    @apply ml-8;
-    list-style: initial;
-  }
-</style>
 
 ---
 layout: center
